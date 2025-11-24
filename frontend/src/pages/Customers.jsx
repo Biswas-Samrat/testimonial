@@ -1,5 +1,4 @@
 import React from "react";
-
 import { useTranslation } from "../hooks/useTranslation";
 import v1Image from "../assets/images/v1.png";
 
@@ -11,7 +10,6 @@ function Customers() {
       <div className="bg-dark text-white py-1">
         <div className="container my-5">
           <div className="row align-items-center">
-            {/* Left Column (Headline and Call-to-Action) */}
             <div className="col-lg-6 col-md-12 mb-4 mb-lg-0">
               <h1 className="display-4 fw-bold">
                 {t("Collect and embed video testimonials in minutes")}

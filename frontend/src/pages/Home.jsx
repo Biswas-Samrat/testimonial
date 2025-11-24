@@ -2,10 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import defaultVideo from "../assets/video/default.mp4";
-import a from "../assets/images/a.png"; 
-import b from "../assets/images/b.png"; 
-import c from "../assets/images/c.png"; 
-import d from "../assets/images/d.png"; 
+import a from "../assets/images/a.png";
+import b from "../assets/images/b.png";
+import c from "../assets/images/c.png";
+import d from "../assets/images/d.png";
 
 function Home() {
   const purpleButtonColor = {
@@ -27,25 +27,24 @@ function Home() {
 
   // Inline style for the avatar stack in the Talk to us button (matching the image)
   const avatarStackStyle = {
-      width: '100px', // Adjust width to contain avatars
-      height: '35px',
-      marginLeft: '10px',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'flex-start',
-      // Using filter to slightly lighten the avatars for visibility if needed, or stick to default for dark button
+    width: "100px", // Adjust width to contain avatars
+    height: "35px",
+    marginLeft: "10px",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "flex-start",
+    // Using filter to slightly lighten the avatars for visibility if needed, or stick to default for dark button
   };
-    
+
   const avatarStyle = (index) => ({
-    width: '35px',
-    height: '35px',
-    borderRadius: '50%',
-    border: '2px solid rgb(46, 46, 46)', // Border color matching the button background
-    position: 'absolute',
+    width: "35px",
+    height: "35px",
+    borderRadius: "50%",
+    border: "2px solid rgb(46, 46, 46)", // Border color matching the button background
+    position: "absolute",
     left: `${index * 20}px`, // Overlap effect
     zIndex: 5 - index, // Ensure stacking order
   });
-
 
   return (
     <div>
@@ -75,10 +74,9 @@ function Home() {
             className="lead mb-5 mx-auto "
             style={{ maxWidth: "900px", fontSize: "clamp(1rem, 2vw, 1rem)" }}
           >
-            Collecting testimonials is hard, we get it! So
-            we built Testimonial. In minutes, you can collect text
-            and video testimonials from your customers with no need for a
-            developer or website hosting.
+            Collecting testimonials is hard, we get it! So we built Testimonial.
+            In minutes, you can collect text and video testimonials from your
+            customers with no need for a developer or website hosting.
           </p>
 
           <div className="d-flex flex-column flex-sm-row justify-content-center align-items-center gap-3 mb-4">
@@ -110,14 +108,14 @@ function Home() {
           </p>
         </div>
       </div>
-      
+
       {/* --- VIDEO SECTION --- */}
       <div
         style={{
           backgroundColor: "rgb(33, 37, 41)",
           padding: "40px 0",
-          display: "flex", 
-          justifyContent: "center", 
+          display: "flex",
+          justifyContent: "center",
           alignItems: "center",
         }}
       >
@@ -149,64 +147,68 @@ function Home() {
         }}
       >
         <div className="container">
-          <h2 
+          <h2
             className="fw-bold mb-4"
             // Use clamp for font size to ensure responsiveness
-            style={{ fontSize: "clamp(2rem, 5vw, 3rem)" }} 
+            style={{ fontSize: "clamp(2rem, 5vw, 3rem)" }}
           >
-            Add testimonials to your website 
-            <br/> 
+            Add testimonials to your website
+            <br />
             with no coding!
           </h2>
 
-          <p 
+          <p
             className="lead text-center mx-auto"
-            style={{ 
-              maxWidth: "650px", 
+            style={{
+              maxWidth: "650px",
               fontSize: "clamp(1rem, 1.5vw, 1.15rem)",
               color: "rgb(150, 150, 150)", // Dim the supporting text slightly
             }}
           >
             Copy and paste our HTML code to add the Wall of Love (
-            <span role="img" aria-label="love-emoji">💛</span> 
-            <a 
+            <span role="img" aria-label="love-emoji">
+              💛
+            </span>
+            <a
               href="#" // Replace with actual link
               style={{ color: "#575CFE", textDecoration: "underline" }}
             >
               full version
-            </a>) to your website. We support any no-code platform (Webflow, WordPress, you name it!)
+            </a>
+            ) to your website. We support any no-code platform (Webflow,
+            WordPress, you name it!)
           </p>
-          
+
           {/* --- RESPONSIVE IMAGES START HERE --- */}
           <div className="mt-5">
             {/* Image A: Displayed on Laptop (lg and up) */}
-            <img 
-              src={a} 
-              alt="Laptop Screen Display" 
-              className="img-fluid rounded shadow d-none d-lg-block mx-auto" 
+            <img
+              src={a}
+              alt="Laptop Screen Display"
+              className="img-fluid rounded shadow d-none d-lg-block mx-auto"
               style={{ maxWidth: "100%", height: "auto" }}
             />
 
             {/* Image B: Displayed on Tablet (md only) */}
-            <img 
-              src={b} 
-              alt="Tablet Screen Display" 
-              className="img-fluid rounded shadow d-none d-md-block d-lg-none mx-auto" 
+            <img
+              src={b}
+              alt="Tablet Screen Display"
+              className="img-fluid rounded shadow d-none d-md-block d-lg-none mx-auto"
               style={{ maxWidth: "100%", height: "auto" }}
             />
 
             {/* Images C and D: Displayed on Mobile (sm and down) */}
             <div className="d-block d-md-none d-flex flex-column align-items-center gap-3">
-              <img 
-                src={c} 
-                alt="Mobile Screen Display 1" 
+              <img
+                src={c}
+                alt="Mobile Screen Display 1"
                 className="img-fluid rounded shadow"
                 style={{ width: "80%", height: "auto" }}
               />
-              <img 
-                src={d} 
-                alt="Mobile Screen Display 2" 
-                className="img-fluid rounded shadow" 
+              <img
+                src={d}
+                alt="Mobile Screen Display 2"
+                className="img-fluid rounded shadow"
                 style={{ width: "80%", height: "auto" }}
               />
             </div>
@@ -216,7 +218,7 @@ function Home() {
       </div>
 
       {/* --- NEW FINAL SECTION: CTA --- */}
-      <div 
+      <div
         style={{
           backgroundColor: "rgb(33, 37, 41)",
           color: "white",
@@ -225,19 +227,25 @@ function Home() {
         }}
       >
         <div className="container" style={{ maxWidth: "800px" }}>
-          <h2 className="fw-bold mb-4" style={{ fontSize: "clamp(2rem, 5vw, 2.5rem)" }}>
+          <h2
+            className="fw-bold mb-4"
+            style={{ fontSize: "clamp(2rem, 5vw, 2.5rem)" }}
+          >
             Ready to collect testimonials?
           </h2>
 
-          <p 
+          <p
             className="lead mx-auto mb-5"
-            style={{ 
+            style={{
               fontSize: "clamp(1rem, 1.5vw, 1.15rem)",
               color: "rgb(150, 150, 150)",
-              lineHeight: "1.6"
+              lineHeight: "1.6",
             }}
           >
-            We are loved by Fortune 500 companies, early-stage startups, marketing agencies, real estate agents, freelancers, and many more. Your customers' testimonials are the best social proof you can get! Get started now 👇
+            We are loved by Fortune 500 companies, early-stage startups,
+            marketing agencies, real estate agents, freelancers, and many more.
+            Your customers' testimonials are the best social proof you can get!
+            Get started now 👇
           </p>
 
           <div className="d-flex justify-content-center align-items-center gap-4 mb-4 flex-column flex-sm-row">
@@ -245,7 +253,7 @@ function Home() {
             <Link
               to="/signup"
               className="btn btn-lg text-white px-5 py-3"
-              style={{ ...purpleButtonColor, minWidth: '250px' }}
+              style={{ ...purpleButtonColor, minWidth: "250px" }}
             >
               Get started with FREE credits
             </Link>
@@ -253,36 +261,47 @@ function Home() {
             {/* Talk to us button with avatars */}
             <button
               className="btn btn-lg text-white px-3 py-3 d-flex align-items-center justify-content-center"
-              style={{ ...darkButtonColor, minWidth: '250px', position: 'relative' }}
+              style={{
+                ...darkButtonColor,
+                minWidth: "250px",
+                position: "relative",
+              }}
             >
               Talk to us
-              <div style={{ ...avatarStackStyle, position: 'relative', height: '35px', marginLeft: '15px' }}>
+              <div
+                style={{
+                  ...avatarStackStyle,
+                  position: "relative",
+                  height: "35px",
+                  marginLeft: "15px",
+                }}
+              >
                 {/* Placeholder Avatars (using temporary background images/colors) */}
-                <div 
-                  style={{ 
-                    ...avatarStyle(0), 
-                    backgroundColor: 'white', 
+                <div
+                  style={{
+                    ...avatarStyle(0),
+                    backgroundColor: "white",
                     backgroundImage: 'url("https://i.pravatar.cc/150?img=1")', // Placeholder image 1
-                    backgroundSize: 'cover'
-                  }} 
+                    backgroundSize: "cover",
+                  }}
                   title="User 1"
                 ></div>
-                <div 
-                  style={{ 
-                    ...avatarStyle(1), 
-                    backgroundColor: 'white', 
+                <div
+                  style={{
+                    ...avatarStyle(1),
+                    backgroundColor: "white",
                     backgroundImage: 'url("https://i.pravatar.cc/150?img=3")', // Placeholder image 2
-                    backgroundSize: 'cover'
-                  }} 
+                    backgroundSize: "cover",
+                  }}
                   title="User 2"
                 ></div>
-                <div 
-                  style={{ 
-                    ...avatarStyle(2), 
-                    backgroundColor: 'white', 
+                <div
+                  style={{
+                    ...avatarStyle(2),
+                    backgroundColor: "white",
                     backgroundImage: 'url("https://i.pravatar.cc/150?img=5")', // Placeholder image 3
-                    backgroundSize: 'cover'
-                  }} 
+                    backgroundSize: "cover",
+                  }}
                   title="User 3"
                 ></div>
               </div>
