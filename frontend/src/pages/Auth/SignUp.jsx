@@ -22,9 +22,6 @@ function SignUp() {
 
         <div className="d-flex align-items-center mb-4">
           <hr className="flex-grow-1 border-secondary" />
-          <span className="mx-3 text-secondary small">
-            Or, register with your email
-          </span>
           <hr className="flex-grow-1 border-secondary" />
         </div>
 
